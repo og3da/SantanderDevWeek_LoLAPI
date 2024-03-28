@@ -1,5 +1,6 @@
 package me.dio.sdw24;
 
+import me.dio.sdw24.application.AskChampionUseCase;
 import me.dio.sdw24.application.GetChampionUseCase;
 import me.dio.sdw24.application.ListChampionsUseCase;
 import me.dio.sdw24.domain.ports.ChampionsRepository;
@@ -22,5 +23,10 @@ public class Application {
 	@Bean
 	public GetChampionUseCase provideGetChampionUseCase(ChampionsRepository repository) {
 		return new GetChampionUseCase(repository);
+	}
+
+	@Bean
+	public AskChampionUseCase provideAskChampionUseCase(ChampionsRepository repository) {
+		return new AskChampionUseCase(repository);
 	}
 }
