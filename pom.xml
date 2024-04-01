@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>me.dio</groupId>
 	<artifactId>santander-dev-week-2024</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>santander-dev-week-2024</name>
 	<description>API REST com Java 21 e SpringBoot 3</description>
 	<properties>
