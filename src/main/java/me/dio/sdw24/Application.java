@@ -14,22 +14,22 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class Application {
 
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
 
-	@Bean
-	public ListChampionsUseCase provideListChampionsUseCase(ChampionsRepository repository) {
-		return new ListChampionsUseCase(repository);
-	}
+    @Bean
+    public ListChampionsUseCase provideListChampionsUseCase(ChampionsRepository repository) {
+        return new ListChampionsUseCase(repository);
+    }
 
-	@Bean
-	public GetChampionUseCase provideGetChampionUseCase(ChampionsRepository repository) {
-		return new GetChampionUseCase(repository);
-	}
+    @Bean
+    public GetChampionUseCase provideGetChampionUseCase(ChampionsRepository repository) {
+        return new GetChampionUseCase(repository);
+    }
 
-	@Bean
-	public AskChampionUseCase provideAskChampionUseCase(ChampionsRepository repository, GenerativeAiApi genAiApi) {
-		return new AskChampionUseCase(repository, genAiApi);
-	}
+    @Bean
+    public AskChampionUseCase provideAskChampionUseCase(ChampionsRepository repository, GenerativeAiApi genAiApi) {
+        return new AskChampionUseCase(repository, genAiApi);
+    }
 }
