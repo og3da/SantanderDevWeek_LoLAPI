@@ -67,7 +67,10 @@ public interface OpenAiChatApi extends GenerativeAiApi {
 
         try {
             OpenAiChatCompletionResponse response = chatCompletion(request);
-            return response.choices().getFirst().message().content();
+            String responseText = response.choices().getFirst().message().content();
+            if (!responseText.isEmpty())
+                logger.info("=== QUESTION RESPONSE: %s (using %s AI) ===".formatted(responseText, "OpenAI"));
+            return responseText;
         }
         catch (FeignException httpError) {
             String errorMessage = httpError.getMessage();

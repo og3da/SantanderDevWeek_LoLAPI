@@ -60,7 +60,10 @@ public interface GoogleGeminiApi extends GenerativeAiApi {
 
         try {
             GeminiResponse response = chatCompletion(request);
-            return response.candidates().getFirst().content().parts().getFirst().text();
+            String responseText = response.candidates().getFirst().content().parts().getFirst().text();
+            if (!responseText.isEmpty())
+                logger.info("=== QUESTION RESPONSE: %s (using %s AI) ===".formatted(responseText, "Google Gemini"));
+            return responseText;
         } catch (FeignException httpError) {
             String errorMessage = httpError.getMessage();
             logger.error(errorMessage);
