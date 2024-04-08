@@ -10,9 +10,9 @@ Neste repositório, você encontrará o código-fonte de uma REST API e seu resp
 Para isso, utilizamos algumas das mais recentes Inteligências Artificiais (IAs) Generativas, possibilitando que nossa API "entenda" a personalidade única de cada campeão para criar interações que capturam sua essência, tornando cada conversa uma experiência única.
 
 LINKS PROJETO ORIGINAL:
-API LoL: https://github.com/digitalinnovationone/santander-dev-week-2024/tree/main
-Front template: https://github.com/digitalinnovationone/lol-frontend-based
-Front finished: https://github.com/digitalinnovationone/lol-frontend-finished
+API LoL: https://github.com/digitalinnovationone/santander-dev-week-2024/tree/main \n
+Front template: https://github.com/digitalinnovationone/lol-frontend-based \n
+Front finished: https://github.com/digitalinnovationone/lol-frontend-finished \n
 **
 ## 🏛️ Arquitetura do Projeto
 
